@@ -1,3 +1,47 @@
 html {
   font-family: "Nunito", sans-serif;
 }
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+@media (min-width: 1000px) {
+header {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+}
+
+@media (min-width: 1000px) {
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+}
+
+
+/*
+.title {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.orange-text {
+  font-size: 0.8rem;
+  color: orange;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
