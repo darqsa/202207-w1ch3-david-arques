@@ -40,7 +40,24 @@ img {
   padding-bottom: 15px;
   content: normal;
 }
-/*buton border radius 0 50 50 50*/
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h4 {
+  margin-top: -70px;
+  color: white;
+  font-weight: 200;
+}
+h3 {
+  margin-top: -20px;
+  color: white;
+}
+#black {
+  color: black;
+}
 
 @media (min-width: 1000px) {
   header {
@@ -72,13 +89,18 @@ img {
     display: flex;
     align-self: flex-end;
     background-color: orange;
-    border: 0;
+    border: 1;
     font-family: Nunito, sans-serif;
     padding: 1.5rem 2rem 1.5rem 2rem;
     border-radius: 0 50px 50px 50px;
     color: white;
     font-size: 1.5rem;
     margin-bottom: 40px;
+  }
+  button:hover {
+    background-color: white;
+    border: 2px orange solid;
+    color: orange;
   }
 }
 
@@ -98,5 +120,16 @@ img {
     width: 500px;
     object-fit: cover;
     border-radius: 10%;
+  }
+}
+
+@media (min-width: 1000px) {
+  h4 {
+    font-size: 0;
+  }
+}
+@media (min-width: 1000px) {
+  h3 {
+    font-size: 0;
   }
 }
